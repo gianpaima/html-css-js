@@ -1,0 +1,349 @@
+body {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+body.dark {
+	background-color: black;
+	color: black;
+}
+body.darkgray {
+	background-color: #333;
+	color: #333;
+}
+body.orange {
+	background-color: #F8931F;
+	color: #F8931F;
+}
+#control {
+	display: none;
+}
+#point {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+body, #point *, ul li:before {
+	/*	
+		Hmmm, strange color transition bug.
+		I have to set negative transition delay for color.
+		Color of "2" is delaying because of it's parent #two's transition delays.
+		I don't know why this is happening and why -.123s is best delay timing and why I haven't slept yet.
+	*/
+
+	-webkit-transition: .456s ease-out, .456s -.123s color ease-out;
+	-moz-transition: .456s ease-out, .456s -.123s color ease-out;
+	-ms-transition: .456s ease-out, .456s -.123s color ease-out;
+	transition: .456s ease-out, .456s -.123s color ease-out;
+}
+#border {
+	width: 16em;
+	height: 16em;
+	border: 2em solid transparent;
+	background-color: transparent !important;
+	border-radius: 100%;
+	position: absolute;
+	margin: -10em 0 0 -10em;
+	text-align: center;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	display: block;
+	width: 15em;
+	height: 15em;
+	border-radius: 100%;
+	background: none !important;
+	position: absolute;
+	top: .525em;
+	left: .525em;
+	overflow: hidden;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	opacity: 0;
+}
+.hl3 ul {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+ul li {
+	position: absolute;
+    background: none !important;
+}
+ul li:nth-of-type(1) {
+	top: .2em;
+    left: .1em;
+}
+ul li:nth-of-type(2) {
+	-webkit-transform: scale(-1);
+	-moz-transform: scale(-1);
+	-ms-transform: scale(-1);
+	transform: scale(-1);
+	right: .1em;
+	bottom: .1em;
+}
+ul li:nth-of-type(3) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+    left: 4.4em;
+    top: -1.3em;
+}
+ul li:nth-of-type(4) {
+	-webkit-transform: rotate(45deg) scale(-1);
+	-moz-transform: rotate(45deg) scale(-1);
+	-ms-transform: rotate(45deg) scale(-1);
+	transform: rotate(45deg) scale(-1);
+    right: 4.5em;
+    bottom: -1.3em;
+}
+ul li:nth-of-type(5) {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+    left: 8.6em;
+    top: .8em;
+}
+ul li:nth-of-type(6) {
+	-webkit-transform: rotate(90deg) scale(-1);
+	-moz-transform: rotate(90deg) scale(-1);
+	-ms-transform: rotate(90deg) scale(-1);
+	transform: rotate(90deg) scale(-1);
+    right: 8.5em;
+    bottom: 0.8em;
+}
+ul li:nth-of-type(7) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+    left: -1.9em;
+    top: 4.3em;
+}
+ul li:nth-of-type(8) {
+	-webkit-transform: rotate(-45deg) scale(-1);
+	-moz-transform: rotate(-45deg) scale(-1);
+	-ms-transform: rotate(-45deg) scale(-1);
+	transform: rotate(-45deg) scale(-1);
+    right: -2em;
+    top: 5.1em;
+}
+ul li:before {
+	content: '';
+    /*border-left: 6.935em solid #119BCF; Portal blue*/
+    border-left: 6.935em solid #333;
+    border-right: 0em solid transparent;
+    border-top: 2.85em solid transparent;
+    border-bottom: 2.85em solid transparent;
+    display: block;
+    margin-left: -10.5em;
+}
+.hl3 ul li:before {
+	margin-left: 0;
+}
+#lambda {
+	width: 10em;
+	height: 11em;
+	background-color: transparent;
+	margin: auto;
+	margin-top: 1.75em;
+}
+#lambda > div {
+	position: absolute;
+}
+#lambda > div:nth-of-type(1) {
+	height: 11em;
+	width: 1.9em;
+	-webkit-transform: rotate(-21deg);
+	-moz-transform: rotate(-21deg);
+	-ms-transform: rotate(-21deg);
+	transform: rotate(-21deg);
+	margin: .5em 5em;
+}
+#lambda > div:nth-of-type(1):after {
+	content: '';
+	background-color: inherit;
+	position: absolute;
+	width: 3em;
+	height: 1.7em;
+	top: 9.35em;
+	left: .2em;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+#lambda > div:nth-of-type(1):before {
+	content: '';
+	background-color: inherit;
+	position: absolute;
+	width: 2.6em;
+	height: 1.7em;
+	-webkit-transform: rotate(21deg);
+	-moz-transform: rotate(21deg);
+	-ms-transform: rotate(21deg);
+	transform: rotate(21deg);
+	left: -.95em;
+	top: -.55em; 
+}
+#lambda > div:nth-of-type(2) {
+	height: 7em;
+	width: 2.05em;
+	-webkit-transform: skew(-31deg);
+	-moz-transform: skew(-31deg);
+	-ms-transform: skew(-31deg);
+	transform: skew(-31deg);
+	margin: 4em 2.03em;
+}
+
+.hl3 #lambda {
+	-webkit-transform: scale(.55);
+	-moz-transform: scale(.55);
+	-ms-transform: scale(.55);
+	transform: scale(.55);
+}
+
+#two {
+	position: absolute;
+	right: -1.5em;
+	top: -.5em;
+	width: 1em;
+	height: 1em;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 1em;
+	font-size: 4em;
+	font-weight: bold;
+	-webkit-transform: translate(-1.7em,0) scale(0.2,0.4) skewX(60deg);
+	-moz-transform: translate(-1.7em,0) scale(0.2,0.4) skewX(60deg);
+	-ms-transform: translate(-1.7em,0) scale(0.2,0.4) skewX(60deg);
+	transform: translate(-1.7em,0) scale(0.2,0.4) skewX(60deg);
+	opacity: 0;
+	-webkit-transition: .456s .321s opacity ease-out, .21s transform ease-out, .456s background ease-out;
+	-moz-transition: .456s .321s opacity ease-out, .21s transform ease-out, .456s background ease-out;
+	-ms-transition: .456s .321s opacity ease-out, .21s transform ease-out, .456s background ease-out;
+	transition: .456s .321s opacity ease-out, .21s transform ease-out, .456s background ease-out;
+}
+#two:before {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	width: 3em;
+	height: .5em;
+	left: -2.5em;
+}
+#two:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	width: .5em;
+	height: 3.2em;
+	top: 0.52em;
+    left: -0.15em;
+	border-bottom-right-radius: .1em .33em;
+	border-top-right-radius: 0em .1em;
+	-webkit-transform: rotate(22.5deg);
+	-moz-transform: rotate(22.5deg);
+	-ms-transform: rotate(22.5deg);
+	transform: rotate(22.5deg);
+}
+#two > div {
+	position: relative;
+	z-index: 2;
+	font-size: 1.5em;
+	top: .2em;
+	right: .3em;
+}
+#two > div:before {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	width: .75em;
+ 	height: 1.2em;
+ 	z-index: -1;
+ 	left: -.3em;
+ 	top: -.1em;
+	-webkit-transform: rotate(-37deg);
+	-moz-transform: rotate(-37deg);
+	-ms-transform: rotate(-37deg);
+	transform: rotate(-37deg);
+	border-radius: 0.15em;
+}
+#two > div:after {
+	content: '2';
+	display: block;
+}
+.hl3 #two > div:after {
+	content: '3';
+}
+.hl2 #two, .hl3 #two {
+	transform:none;
+	opacity: 1;
+	-webkit-transition: .21s opacity ease-out, .456s .321s transform ease-out, .456s background ease-out;
+	-moz-transition: .21s opacity ease-out, .456s .321s transform ease-out, .456s background ease-out;
+	-ms-transition: .21s opacity ease-out, .456s .321s transform ease-out, .456s background ease-out;
+	transition: .21s opacity ease-out, .456s .321s transform ease-out, .456s background ease-out;
+}
+.init, .hl, .hl *, .init * {
+	background-color: #F06F20;
+}
+.hlof, .hlof * {
+	background-color: #38E92A;
+}
+.hlbs, .hlbs * {
+	background-color: #1583E7;
+}
+.hl2, .hl2 * {
+	background-color: #F77E37;
+}
+.hl3, .hl3 * {
+	background-color: white;
+}
+.init #two, .init #two > div {
+	background-color: white;
+}
+.dark .init #two, .dark .init #two > div {
+	background-color: black;
+}
+.darkgray .init #two, .darkgray .init #two > div {
+	background-color: #333;
+}
+
+#border.init {
+	border-color: white;
+}
+.dark #border.init {
+	border-color: black;
+}
+.darkgray #border.init {
+	border-color: #333;
+}
+#border.hl {
+	border-color: #F06F20; 
+}
+#border.hlof {
+	border-color: #38E92A;
+}
+#border.hlbs {
+	border-color: #1583E7;
+}
+#border.hl2 {
+	border-color: #F77E37;
+}
+#border.hl3 {
+	border-color: white;
+}
