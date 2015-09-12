@@ -1,0 +1,95 @@
+.centr {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 600px;
+}
+
+.rinnegan-holder {
+  border: 5px solid #010101;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  height: 310px;
+  width: 600px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.rinnegan {
+  position: relative;
+  z-index: 2;
+  margin-left: 140px;
+  background-color: #BC79FF;
+  height: 300px;
+  width: 300px;
+  display: block;
+  border-radius: 50%;
+  border: 10px solid #010101;
+  background-color: #000000;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF000000', endColorstr='#FFBC79FF');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iNiUiIHN0b3AtY29sb3I9IiMwNTAyMDIiLz48c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PHN0b3Agb2Zmc2V0PSIyMyUiIHN0b3AtY29sb3I9IiNiYzc5ZmYiLz48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzAyMDEwMSIvPjxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNiYzc5ZmYiLz48c3RvcCBvZmZzZXQ9IjQzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iNDYlIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PHN0b3Agb2Zmc2V0PSI2MSUiIHN0b3AtY29sb3I9IiNiYzc5ZmYiLz48c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PHN0b3Agb2Zmc2V0PSI3OSUiIHN0b3AtY29sb3I9IiNiYzc5ZmYiLz48c3RvcCBvZmZzZXQ9IjgxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iODIlIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmM3OWZmIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-radial-gradient(center, ellipse cover, #000000 0%, #050202 6%, #bc79ff 8%, #bc79ff 23%, #020101 25%, #bc79ff 27%, #bc79ff 40%, #000000 43%, #bc79ff 46%, #bc79ff 61%, #000000 63%, #bc79ff 65%, #bc79ff 79%, #000000 81%, #bc79ff 82%, #bc79ff 100%);
+  background-image: radial-gradient(ellipse cover at center, #000000 0%, #050202 6%, #bc79ff 8%, #bc79ff 23%, #020101 25%, #bc79ff 27%, #bc79ff 40%, #000000 43%, #bc79ff 46%, #bc79ff 61%, #000000 63%, #bc79ff 65%, #bc79ff 79%, #000000 81%, #bc79ff 82%, #bc79ff 100%);
+  box-shadow: 0 0 100px 1px #bc79ff;
+}
+.rinnegan .outercircle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  opacity: .2;
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(10%, rgba(255, 255, 255, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.7)), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0.9) 10%, rgba(0, 0, 0, 0.7) 30%, transparent 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 12+ */
+  /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #ffffff 0%, rgba(255, 255, 255, 0.9) 10%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, rgba(255, 255, 255, 0.9) 10%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #0D343A;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0d343a), to(#000000));
+  background: -moz-linear-gradient(top, #0d343a 0%, black 100%);
+  overflow: hidden;
+}
+
+.drop {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0d343a), to(rgba(255, 255, 255, 0.6)));
+  background: -moz-linear-gradient(top, #0d343a 0%, rgba(255, 255, 255, 0.6) 100%);
+  width: 1px;
+  height: 89px;
+  position: absolute;
+  bottom: 200px;
+  -webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+  z-index: 3;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+  to {
+    margin-top: 900px;
+  }
+}
+.overlay {
+  background-color: #000;
+  height: 800px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  opacity: 0.5;
+}
